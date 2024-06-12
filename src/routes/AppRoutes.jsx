@@ -9,7 +9,7 @@ export function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Lovelace_1.2.4/login" element={<Login />} />
+        <Route path="/Lovelace_1.2.4" element={<Login />} />
         <Route path="/Lovelace_1.2.4/register" element={<Register />} />
         <Route path="/Lovelace_1.2.4/tool" element={<Tool />} />
         <Route path="/Lovelace_1.2.4/practice" element={<Practice />} />

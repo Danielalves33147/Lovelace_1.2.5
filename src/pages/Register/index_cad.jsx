@@ -92,7 +92,7 @@ export function Register() {
         </button>
         <div className="footer">
           <p>Você já tem uma conta?</p>
-          <Link to="/login">Faça login aqui</Link>
+          <Link to="/Lovelace_1.2.4">Faça login aqui</Link>
         </div>
       </form>
     </div>
