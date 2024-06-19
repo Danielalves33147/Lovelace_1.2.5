@@ -15,8 +15,8 @@ export function Tool() {
 
     function pratica(){
         Swal.fire({
-            title: 'Iniciar Atividade?',
-            text: "A partir daqui não terá mais volta!",
+            title: 'Iniciar Atividades?',
+            text: "Voce pode acessar uma pre definida ou criar uma sala personalizada, o que deseja?",
             icon: 'warning',
             iconColor: '#F21B3F',
             background: 'white',
@@ -24,19 +24,46 @@ export function Tool() {
             confirmButtonColor: '#F21B3F',
             border: 'none',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Iniciar'
+            confirmButtonText: 'Pré-definida',
+            cancelButtonText: 'Personalizada'
           }).then((result) => {
             if (result.isConfirmed) {
               navigate('/practice');
+            } else {
+             
+                Swal.fire({
+                    title: 'Iniciando Atividade!',
+                    text: "Voce pode criar uma sala, ou entrar em uma já existente!",
+                    icon: 'warning',
+                    iconColor: '#F21B3F',
+                    background: 'white',
+                    showCancelButton: true,
+                    confirmButtonColor: '#F21B3F',
+                    border: 'none',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Criar Sala',
+                    cancelButtonText: 'Entrar'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                    navigate('/createactivity');
+                    } else {
+                    navigate('/accesscode');
+                    }
+                  })
+
+
+
+
+
             }
           })
     }
 
-  return (
+  return ( 
 
-            <body>
+<body>
     <header id="lovelog">
-        <h1 id>Lovelace</h1>
+        <h1>Lovelace</h1>
     </header>
 
     <section id="mainContent">
@@ -50,6 +77,7 @@ export function Tool() {
                 <h2>Como funciona?</h2>
                 <p>Um contador para o tempo de leitura e uma pergunta para responder! Simples e prático.</p>
                 <p>Basta ler o texto e dar as palavras chave, você pontuará a medida que acertar as palavras chave e levar menos tempo para ler!</p>
+                <p>Ou crie uma sala personalizada, com suas proprias perguntas, textos e respostas! Tudo depende da dua criatividade!</p>
             </section>
 
             <section id="interactButtons">

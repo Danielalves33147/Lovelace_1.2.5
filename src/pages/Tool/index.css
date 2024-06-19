@@ -4,12 +4,6 @@
     
 }
 
-body {
-    overflow-x: hidden;
-    background: linear-gradient(142.15deg, #FFFFFF 49.5%, #F21B3F 159.81%);
-    
-}
-
 /* Header */
 
 
@@ -484,7 +478,7 @@ footer .divider {
     box-shadow: 0px 8px 21px rgba(242, 27, 63, 0.15);
 }
 
-/* Media queries */
+/* Media queries 
 @media only screen and (max-width:1200px) {
     footer {
         display: flex;
@@ -579,3 +573,4 @@ footer .divider {
     }
 
 }
+    */

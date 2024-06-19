@@ -1,4 +1,4 @@
-body {
+body{
   overflow-x: hidden;
   background: linear-gradient(142.15deg, #FFFFFF 49.5%, #F21B3F 159.81%);
 }
@@ -136,4 +136,3 @@ header span {
   text-decoration-line: underline;
   color: #5C73DB;
 }
-

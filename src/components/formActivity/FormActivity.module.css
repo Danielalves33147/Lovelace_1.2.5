@@ -1,0 +1,59 @@
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 50px; /* Espaço superior entre o topo da janela e a caixa */
+  width: 100%;
+  max-width: 600px; /* Largura máxima da caixa do formulário */
+  gap: 10px;
+}
+.form_container h1 {
+  margin: 15px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.header_container {
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+}
+
+.questions_container {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.btn {
+  background-color: #F21B3F;
+  color: #fff;
+  padding: 8px 16px; /* Reduzindo ainda mais o padding para diminuir o tamanho do botão */
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 200px; /* Largura máxima do botão */
+  margin-bottom: 10px; /* Espaçamento inferior entre botões */
+}
+
+.btn:hover {
+  background-color: #d01732;
+}
